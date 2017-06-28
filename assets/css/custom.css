@@ -5,3 +5,8 @@
 .section-participacoes {
     background: #EEEEEE;
 }
+
+.brand .n-logo {
+    max-width: 100px;
+    margin-bottom: 40px;
+}
