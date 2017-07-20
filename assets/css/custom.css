@@ -18,7 +18,7 @@
     height: 0;
     overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -31,4 +31,8 @@
 
 .video-container {
     margin-bottom: 1rem;
+}
+
+#patrocinadores a img {
+    margin-top: 1rem;
 }
