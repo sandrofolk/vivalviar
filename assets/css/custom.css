@@ -36,3 +36,17 @@
 #patrocinadores a img {
     margin-top: 1rem;
 }
+
+table.rank {
+    counter-reset: rowNumber;
+}
+
+table.rank tr>td:first-child {
+    counter-increment: rowNumber;
+}
+
+table.rank tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
