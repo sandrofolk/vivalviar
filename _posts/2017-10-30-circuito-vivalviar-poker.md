@@ -11,7 +11,7 @@ date: 2017-10-30T17:29:34.612Z
 
 <div class="row">
 
-<div class="col-md-4">
+<div class="col-md-5">
 
 <div class="team-player">
 
@@ -22,6 +22,34 @@ date: 2017-10-30T17:29:34.612Z
 </div>
 
 </div>
+
+<div class="col-md-4">
+
+<div class="team-player">
+
+<img src="/uploads/2_rafael_rodrigues.png" alt="1. Wanderlei Bembem" class="rounded-circle img-fluid img-raised">
+
+<h4 class="title">2. Rafael Rodrigues</h4>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="team-player">
+
+<img src="/uploads/3_marcio_alexandre.png" alt="1. Wanderlei Bembem" class="rounded-circle img-fluid img-raised">
+
+<h4 class="title">3. Márcio Alexandre</h4>
+
+</div>
+
+</div>
+
+
+
+
 
 </div>
 
