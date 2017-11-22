@@ -15,7 +15,7 @@ date: 2017-10-30T17:29:34.612Z
 
 <div class="team-player">
 
-![1. Wanderlei Bembem](/uploads/1_wanderlei_bembem.png)
+<img src="/uploads/1_wanderlei_bembem.png" alt="1. Wanderlei Bembem" class="rounded-circle img-fluid img-raised">
 
 <h4 class="title">1. Wanderlei Bembem</h4>
 
