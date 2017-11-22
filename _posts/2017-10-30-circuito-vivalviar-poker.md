@@ -5,6 +5,12 @@ date: 2017-10-30T17:29:34.612Z
 ---
 <div class="col-8">
 
+<h3 class="center text-danger">Encerrado</h3>
+
+</div>
+
+<!--<div class="col-8">
+
 <h3>Ranking:</h3>
 
 <table class="table table-bordered rank">
@@ -1375,4 +1381,4 @@ date: 2017-10-30T17:29:34.612Z
 
 </table>
 
-</div>
+</div>-->
