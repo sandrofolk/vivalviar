@@ -7,6 +7,26 @@ date: 2017-10-30T17:29:34.612Z
 
 <h3 class="center text-danger">Encerrado</h3>
 
+<div class="team">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="team-player">
+
+![1. Wanderlei Bembem](/uploads/1_wanderlei_bembem.png)
+
+<h4 class="title">1. Wanderlei Bembem</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 <!--<div class="col-8">
