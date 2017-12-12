@@ -28,3 +28,33 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Permalink", name: "permalink", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "patrocinador" # Used in routes, e.g., /admin/collections/:slug/edit
+    label: "Patrocinador" # Used in the UI, e.g., "New Post"
+    folder: "_patrocinadores" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Name", name: "name", widget: "string", tagname: "h1"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Site", name: "site", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "banner" # Used in routes, e.g., /admin/collections/:slug/edit
+    label: "Banner" # Used in the UI, e.g., "New Post"
+    folder: "_banners" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title 1", name: "title1", widget: "string", tagname: "h1"}
+      - {label: "Banner 1", name: "banner1", widget: "image"}
+      - {label: "Link 1", name: "link1", widget: "string"}
+      - {label: "Title 2", name: "title2", widget: "string", tagname: "h1"}
+      - {label: "Banner 2", name: "banner2", widget: "image"}
+      - {label: "Link 2", name: "link2", widget: "string"}
+      - {label: "Title 3", name: "title3", widget: "string", tagname: "h1"}
+      - {label: "Banner 3", name: "banner3", widget: "image"}
+      - {label: "Link 3", name: "link3", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
