@@ -13,15 +13,20 @@ layout: default
                         <li data-target="#carouselHomeIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img class="d-block" src="media/banners/WhatsApp%20Image%202017-09-05%20at%2000.09.28.jpeg?raw=true" alt="Circuito Vivalviar Poker">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block" src="media/banners/WhatsApp%20Image%202017-09-05%20at%2000.09.36.jpeg?raw=true" alt="Circuito Vivalviar Omaha">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block" src="media/banners/WhatsApp%20Image%202017-08-29%20at%2014.30.07.jpeg?raw=true" alt="Circuito Vivalviar High Roller">
-                        </div>
+                        {% for banner in site.banners %}
+                            <div class="carousel-item active">
+                                <img class="d-block" src="{{ banner.banner1 }}" alt="{{ banner.title1 }}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="{{ banner.banner2 }}" alt="{{ banner.title2 }}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block" src="{{ banner.banner3 }}" alt="{{ banner.title3 }}">
+                            </div>
+                        {% endfor %}
+                            <!--<div class="carousel-item">
+                                <img class="d-block" src="media/banners/WhatsApp%20Image%202017-09-05%20at%2000.09.36.jpeg?raw=true" alt="Circuito Vivalviar Omaha">
+                            </div>-->
                     </div>
                     <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
                         <i class="now-ui-icons arrows-1_minimal-left"></i>
@@ -34,15 +39,11 @@ layout: default
 
             <div id="patrocinadores" class="col-sm-3 offset-sm-1" data-background-color="black">
                 <p class="category">Patrocinadores</p>
-                <a href="http://dimenor.net/" target="_blank" rel="nofollow">
-                    <img src="media/patrocinadores/dimenor_fichas.jpg" />
-                </a>
-                <a href="http://www.hartes.com.br/" target="_blank" rel="nofollow">
-                    <img src="media/patrocinadores/h_artes.jpg" />
-                </a>
-                <a href="http://www.conttudoweb.com.br/" target="_blank" rel="nofollow">
-                    <img src="media/patrocinadores/conttudo_web.png" />
-                </a>
+                {% for patrocinador in site.patrocinadores %}
+                    <a  href="{{ patrocinador.site }}" target="_blank" rel="nofollow">
+                        <img src="{{ patrocinador.logo }}" alt="Imagem do Patrocinador {{ patrocinador.name }}"/>
+                    </a>
+                {% endfor %}
             </div>
         </div>
     </div>
